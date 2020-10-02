@@ -5,55 +5,57 @@ title: About Us
 
 We are a team based in the [School of Computing, National University of Singapore](http://www.comp.nus.edu.sg).
 
-You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ## Project team
 
-### John Doe
 
-<img src="images/johndoe.png" width="200px">
+### Xu Caiyi
 
-[[homepage](http://www.comp.nus.edu.sg/~damithch)]
-[[github](https://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
+<img src="images/caiyi34777.png" width="200px">
 
-* Role: Project Advisor
-
-### Jane Doe
-
-<img src="images/johndoe.png" width="200px">
-
-[[github](http://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
-
-* Role: Team Lead
-* Responsibilities: UI
-
-### Johnny Doe
-
-<img src="images/johndoe.png" width="200px">
-
-[[github](http://github.com/johndoe)] [[portfolio](team/johndoe.md)]
+[[github](https://github.com/Caiyi34777)]
+[[portfolio](team/caiyi34777.md)]
 
 * Role: Developer
-* Responsibilities: Data
+* Responsibilities: Documentation. In charge of Model.
 
-### Jean Doe
 
-<img src="images/johndoe.png" width="200px">
+### Huang Chengyu
 
-[[github](http://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
+<img src="images/hcy123902.png" width="200px">
 
-* Role: Developer
-* Responsibilities: Dev Ops + Threading
-
-### James Doe
-
-<img src="images/johndoe.png" width="200px">
-
-[[github](http://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
+[[github](http://github.com/HCY123902)] [[portfolio](team/hcy123902.md)]
 
 * Role: Developer
-* Responsibilities: UI
+* Responsibilities: Integration. In charge of Storage.
+
+### Liu Yangming
+
+<img src="images/richardcom.png" width="200px">
+
+[[github](http://github.com/richardcom)]
+[[portfolio](team/richardcom.md)]
+
+* Role: Developer
+* Responsibilities: Testing. In charge of Storage.
+
+
+### Jiang Siyuan
+
+<img src="images/stefan-jiang.png" width="200px">
+
+[[github](http://github.com/Stefan-Jiang)]
+[[portfolio](team/Stefan-Jiang.md)]
+
+* Role: Developer
+* Responsibilities: Code Quality. In charge of UI.
+
+
+### Song Qifeng
+
+<img src="images/davidsqf.png" width="200px">
+
+[[github](http://github.com/davidsqf)] [[portfolio](team/davidsqf.md)]
+
+* Role: Developer
+* Responsibilities: Deliverables and deadlines. In charge of Logic.
