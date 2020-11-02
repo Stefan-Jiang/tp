@@ -21,7 +21,7 @@ import seedu.address.ui.Mode;
 public class SortCommand extends Command {
 
     public static final String COMMAND_WORD = "sort";
-    public static final String SUGGESTION = "";
+    public static final String SUGGESTION = "sort <keywords>";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Sort the list of books"
             + "of a certain category by their popularity.\n"

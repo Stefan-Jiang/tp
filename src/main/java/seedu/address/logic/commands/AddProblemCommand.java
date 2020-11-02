@@ -16,7 +16,7 @@ import seedu.address.model.problem.Problem;
 public class AddProblemCommand extends Command {
 
     public static final String COMMAND_WORD = "report";
-    public static final String SUGGESTION = "report severity/SEVERITY problem/DESCRIPTION";
+    public static final String SUGGESTION = "report severity/<severity> problem/<description>";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Reports a problem. " + "Parameters: " + PREFIX_SEVERITY
             + "severity " + PREFIX_DESCRIPTION + "description ";
