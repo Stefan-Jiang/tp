@@ -125,7 +125,7 @@ The `Storage` component,
 
 ### Common classes
 
-Classes used by multiple components are in the `seedu.addressbook.commons` package.
+Classes used by multiple components are in the `seedu.intellibrary.commons` package.
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -257,21 +257,21 @@ The current implementation of the stocking is consistent with other components o
   * Pros: Reduces the amount of typing and brings convenience to users.
   * Cons: May cause confusion to new user because of the abbreviation of the library location.
 
-### \[New\] reportProblem feature
+### \[New\] ReportProblem feature
 
 ####  Implementation
 
-The current implementation of the reportProblem command is supported by `AddProblemCommand.java` and `AddProblemCommandParser.java` 
+The current implementation of the ReportProblem command is supported by `AddProblemCommand.java` and `AddProblemCommandParser.java` 
 
-Given below is an example usage scenario and how the reportProblem mechanism behaves at each step.
+Given below is an example usage scenario and how the ReportProblem mechanism behaves at each step.
 
 Step 1. User input an input: `report severity/high problem/book is broken`
 
-Step 2. Logic Manager would parse the input `report severity/high problem/book is broken`, and determines that it is a reportProblem command.
+Step 2. Logic Manager would parse the input `report severity/high problem/book is broken`, and determines that it is a ReportProblem command.
 
-Step 3. AddProblemCommandParser would then parse the problem reported (both severity and problem) and call the reportProblem Command.
+Step 3. AddProblemCommandParser would then parse the problem reported (both severity and problem) and call the ReportProblem Command.
 
-Step 4. Execution of add problem would take place and the result will be updated in the filtered list in Model.
+Step 4. Execution of AddProblemCommand would take place and the result will be updated in the filtered list in Model.
 
 The following sequence diagram summarizes what happens when a user executes a new command:
 
@@ -286,7 +286,7 @@ a useful attribute to add. Therefore a `problem` has two attributes:
 `severity` and `description`.
 
 * Unlike other commands such as `edit` and `deleteBy` which 
-manipulate with `book`, `reportProblem` has no relation with
+manipulate with `book`, `ReportProblem` has no relation with
 `book`, it adds `problem`. Therefore, a new model series of `problem`
 is created.  
 
@@ -299,9 +299,27 @@ inside a list.
   kind of book-related problems, we can store the (`problem` - `book`)
   connection/mapping inside the `problem`.
   
-  * Pros: Enhances the usefulness of `reportProblem` feature.
+  * Pros: Enhances the usefulness of `ReportProblem` feature.
   * Cons: Makes the relationship between models more complex
   and may increase coupling inside the code.
+  
+### \[New\] ViewProblem feature
+
+####  Implementation
+
+The current implementation of the ViewProblem command is supported by `ViewProblemCommand.java` 
+
+Given below is an example usage scenario and how the ViewProblem mechanism behaves at each step.
+
+Step 1. User enters command: `view`
+
+Step 2. Logic Manager would parse the input `view`, and determines that it is a ViewProblem command.
+
+Step 3. Execution of ViewProblemCommand would take place.
+
+The following sequence diagram summarizes what happens when a user executes a new command:
+
+![ViewProblemSequenceDiagram](images/ViewProblemSequenceDiagram.png)
 
 
 

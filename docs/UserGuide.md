@@ -352,6 +352,8 @@ Format: `report severity/SEVERITY problem/PROBLEM`
 
 Note that `SEVERITY` is limited to `high`, `medium`, and `low`, case insensitive.
 
+Problem description should only contain alphanumeric characters and spaces, and it should not be blank.
+
 Examples:
 * `report severity/high problem/book is broken`
 
@@ -412,4 +414,6 @@ Action | Format, Examples
 **Edit** | `edit INDEX [n/NAME] [i/ISBN] [e/EMAIL] [ad/ADDRESS] [t/TIMES] [c/CATEGORY]… [s/STOCKING] [a/ATUHOR] [p/PUBLISHER] [ra/RATING] [re/REVIEW] [rn/REVIEWNUMBER]`<br> e.g.,`edit 3 p/Scribner Publisher t/`
 **Find** | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`
 **List** | `list`
+**ReportProblem** | `report severity/SEVERITY problem/DESCRIPTION` <br> e.g., `report severity/medium problem/book is broken`
+**ViewProblems** | `view`
 **Help** | `help`
