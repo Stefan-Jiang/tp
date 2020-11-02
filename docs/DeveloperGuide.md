@@ -632,7 +632,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
       Use case ends.
 
-
 **Use case UC09 - View Sample Data**
 
 **MSS**
