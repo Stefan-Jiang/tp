@@ -510,6 +510,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User request to check the location of a book using a command.
+
 2.  The application shows the relevant information of the book, including the storage location.
 
     Use case ends.
@@ -533,6 +534,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User requests to check the stocking of a book using a command.
+
 2.  The application shows the relevant information of the book, including the stocking of the book.
 
     Use case ends.
@@ -556,6 +558,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User requests to add a review record of a certain book.
+
 2.  The application adds the review to the review list of the book, and shows the new review list.
 
     Use case ends.
@@ -579,6 +582,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User requests to delete a review record of a certain book.
+
 2.  The application deletes the review to the review list of the book, and shows the updated review list.
 
     Use case ends.
@@ -602,6 +606,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User requests to edit a review record of a certain book.
+
 2.  The application edits the review to the review list of the book, and shows the updated review list.
 
     Use case ends.
