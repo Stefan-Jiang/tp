@@ -98,8 +98,6 @@ If the stocking information of some of the libraries is not provided or if the n
 
 Additionally, to make the recorded stocking more reasonable, the stocking of a book in a location should be an integer between 0 and 99999.
 
-
-
 Examples:
 * `s/centralLb 30 scienceLb 20 HSSMLb 10`
 * `s/centralLb 10`
@@ -107,7 +105,9 @@ Examples:
 
 ### Regarding categories and book cover
 
-The list of valid categories are given below in ascending order with respect to the priority of the category.
+The list of relevant categories are given below in ascending order with respect to the priority of the category.
+
+Note that categories that are not in the list is still a valid category, but they will not help to give a specific book cover to the book.
 
 * `General`
 * `Novels`
@@ -123,7 +123,7 @@ The list of valid categories are given below in ascending order with respect to 
 
 The book cover of a book depends on the categories of the book.
 
-The category name is case insensitive.
+The category name is case insensitive, but there cannot be white space in between the category words.
 
 If more than 1 category is given, the book cover will depend on the category with higher priority.
 
@@ -131,7 +131,7 @@ If no category is given or none of the categories given is in the list above, th
 
 For example, the book with categories Physics and Science will have a book cover corresponding to Physics
 
-To make the book cover more diversified, 2 books with the same categories may have different book cover corresponding to the categories.
+To make the book cover more diversified, 2 books with the same categories may have different book cover corresponding to the categories, but they may also have the same book cover.
 
 ### Check stocking of book in every location: `stock`
 
@@ -145,11 +145,21 @@ Format: `stock [n/BOOK NAME] [i/ISBN]`
 
 Both the name and the ISBN of the book are optional argument in the command.
 
-The book name searching follows the all match pattern, where the search name string will be split into keywords according to the white space in between, and the book name will need to contain all of the keywords in order to be included in the result list.
+* The book name searching follows the all match pattern, where the search name string will be split into keywords according to the white space in between, and the book name will need to contain all of the keywords in order to be included in the result list.
 
-The ISBN name searching follows the some match pattern, where the search number string will be split into keywords according to the white space in between, and the book ISBN will need to contain some of the keywords in order to be included in the result list.
+    * In this case, the word contain means the keyword needs to match exactly some of the words in the book name.
 
-The keyword of book name is case insensitive.
+    * For example, `The Guns of August` contains `Guns`, but it does not contain `Gun`.
+    
+    * The keyword of book name is case insensitive.
+
+* The ISBN name searching follows the some match pattern, where the search number string will be split into keywords according to the white space in between, and the book ISBN will need to contain some of the keywords in order to be included in the result list.
+
+    * In this case, the word contain means the keyword needs to match the ISBN of the book partially.
+    
+    * For example, `9780553175219` contains `9780553175219` and `97805`.
+
+The reason for the difference of behavior of the book name and ISBN is that book name can be used to check the stocking information of more specific books, while ISBN can be used to check the stocking information of a wide range of books.
 
 If both the name and the ISBN are used in the command, then the result will be the stocking information of the books that satisfy either of the conditions.
 
@@ -194,7 +204,6 @@ Examples:
 ### Add review: `addReview`
 
 Add a review to a certain book. 
-
 
 Format: `addReview INDEX ra/RATING re/REVIEW_CONTENT`
 
