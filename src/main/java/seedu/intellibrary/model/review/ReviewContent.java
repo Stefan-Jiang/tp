@@ -13,7 +13,7 @@ public class ReviewContent {
     /*
      * The review should not be empty
      */
-    public static final String VALIDATION_REGEX = "^\\s*(\\S.{1,300})\\s*$";
+    public static final String VALIDATION_REGEX = "^\\s*(\\S.{0,299})\\s*$";
 
     public final String content;
 
