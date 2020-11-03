@@ -18,6 +18,7 @@ public class Description {
      */
     public Description(String description) {
         requireNonNull(description);
+        assert !description.isEmpty() : "description cannot be empty";
         checkArgument(isValidDescription(description), MESSAGE_CONSTRAINTS);
         this.description = description;
     }
