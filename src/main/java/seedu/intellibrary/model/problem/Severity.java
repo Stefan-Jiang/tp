@@ -16,6 +16,7 @@ public class Severity {
      */
     public Severity(String severity) {
         requireNonNull(severity);
+        assert !severity.isEmpty() : "severity cannot be empty";
         this.severity = severity.toUpperCase();
     }
 
